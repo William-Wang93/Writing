@@ -12,7 +12,9 @@ body {
   
    
   }
-
+  .welcome2{
+      position:relative;
+      right:1%;
   nav a {
     color: #314570;
     font-family: futura-pt;
@@ -36,7 +38,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    position: static;
+    position: relative;
     color: #314570;
   }
   
