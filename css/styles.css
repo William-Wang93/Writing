@@ -1,22 +1,4 @@
-/* Index Page CSS*/
-:root {
-    --textBlack: #181c20;
-    --figureBlack: #39434d;
-    --lightBlack: #2e363e;
-    --lightGrey: #abaeb1;
-    --darkGrey: #919598;
-    --accentOrange: #e32c10;
-    --lightOrange: #f9d3ce;
-    /*lighter colors: #E35719, #F5C4AE*/
-    --blue: #133267;
-    --lightBlue: #b8c1d1;
-    --cream: #fcfbfa;
-    --darkCream: #e9e2da;
-    /* #FDFDFC */
-    --sansFont: 'Alegreya Sans';
-    --sansSC: 'Alegreya Sans SC';
-  }
-  
+
 body {
     margin-left:50px;
     margin-right:50px;
