@@ -184,7 +184,7 @@ body {
   
 /* Writing Page CSS*/
   .posts-wrapper{
-    margin-left:30px;
+    margin-left:20px;
     margin-right:30px;
     display: flex;
     flex-wrap: wrap;
