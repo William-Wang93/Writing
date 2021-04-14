@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <style>
+        #map { width: 600px; height: 500px; display: block; margin-left:auto; margin-right:auto; }
+        .Title {text-align: center; font-weight:bold;}
+        body { font: 16px/1.4 "Helvetica Neue", Arial, sans-serif; }
+        .ghbtns { position: relative; top: 4px; margin-left: 5px; }
+        a { color: #0077ff; }
+    </style>
+</head>
+<body>
+    <div>
+    <div class = "Title">
+    Density of Rural Settlement in England in 1377
+    </div>    
+    </div>
+    <br>
+    <div id="map"></div>
+
+    <!-- <script src="../node_modules/simpleheat/simpleheat.js"></script>
+    <script src="../src/HeatLayer.js"></script>
+     -->
+    <script src="leaflet-heat.js"></script>
+    
+    <script src="http://leaflet.github.io/Leaflet.markercluster/example/realworld.388.js"></script>
+    <script>
+
+        var map = L.map('map').setView([52.5,-.05], 6);
+        
+        var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        var heat = L.heatLayer([[52.06, -.5292, 0.229], // lat, lng, intensity
+	[52.61,.8864,1], [52.18, .9708, 0.66], [52.2503, .1218, 0.159], [51.57, .4857, 0.540], [52.6583, .6396, 0.067], 
+    [52.27,-.8756, 0.452], [51.28, .5217, 0.636], [50.7488, -2.3455, 0.385], [51.05, -1.30, 0.3743], [50.26, -5.0527, 0.3859], [50.71, -3.53, 0.5139],
+    [52.87, -2.05, 0.241], [52.76, -2.714, 0.265], [53.76, -2.704, 0.2689], [54.5783, -2.4896, 0.083], [54.5772, -2.7975, 0.133]], {minOpacity: .5, radius: 25, gradient:{0.4: 'blue', 0.5: 'yellow', .6: 'red'}}).addTo(map);
+         
+        var bedmarker = L.marker([52.06,-.5292]).addTo(map);
+        bedmarker.bindPopup("Bedfordshire: 20,339");
+        
+        var norfolkmarker = L.marker([52.61,.8864]).addTo(map);
+        norfolkmarker.bindPopup("Norfolk: 58,610");
+
+        var suffolkmarker = L.marker([52.18,.9708]).addTo(map);
+        suffolkmarker.bindPopup("Suffolk: 58,610");
+        
+        var huntmarker = L.marker([51.5, .1218]).addTo(map);
+        huntmarker.bindPopup("Huntingdonshire: 14,169");
+
+        var essexmarker = L.marker([51.57, .4857]).addTo(map);
+        essexmarker.bindPopup("Essex: 47,962");
+
+        var rutmarker = L.marker([52.65, .6396]).addTo(map);
+        rutmarker.bindPopup("Rutland: 5,994");
+        
+        var northmarker = L.marker([52.27, -.8756]).addTo(map);
+        northmarker.bindPopup("Northamptonshire: 40,225");
+
+        var kentmarker = L.marker([51.28, .5217]).addTo(map);
+        kentmarker.bindPopup("Kent: 56,557");
+
+        var dorsetmarker = L.marker([50.74, -2.34]).addTo(map);
+        dorsetmarker.bindPopup("Dorset: 34,241");
+
+        var hampshiremarker = L.marker([51.05, -1.30]).addTo(map);
+        hampshiremarker.bindPopup("Hampshire: 33,241");
+
+        var cornmarker = L.marker([50.26, -5.05]).addTo(map);
+        cornmarker.bindPopup("Cornwall: 34,274");
+
+        var devonmarker = L.marker([50.71, -3.5309]).addTo(map);
+        devonmarker.bindPopup("Devon: 45,635");
+
+        var Staffmarker = L.marker([52.87, -2.05]).addTo(map);
+        Staffmarker.bindPopup("Staffordshire: 21,465");
+
+        var shropmarker = L.marker([52.76, -2.714]).addTo(map);
+        shropmarker.bindPopup("Shropshire: 47,962");
+
+        var lancmarker = L.marker([53.76, -2.704]).addTo(map);
+        lancmarker.bindPopup("Lancashire: 23,880");
+
+        var westmarker = L.marker([54.57, -2.48]).addTo(map);
+        westmarker.bindPopup("Westmorland: 7,389");
+
+        var cumbmarker = L.marker([54.57, -2.79]).addTo(map);
+        cumbmarker.bindPopup("Cumberland: 11,841");
+        
+    </script>
+</body>
+</html>
