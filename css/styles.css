@@ -386,8 +386,11 @@ body {
   padding: 20px;
   color: #314570;
   border-color: #314570;
-  margin-left: 70px;
-  margin-right: 70px;
+}
+
+  .Project-Button:hover {
+  background-color: #314570;
+  color: white;
 }
   .Content-Blog{
     font-size: 1.5rem;
