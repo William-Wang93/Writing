@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <style> 
+      .Project-Button{
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        color: #314570;
+        border-color: #314570;
+      }
+      
+        .Project-Button:hover {
+        background-color: #314570;
+        color: white;
+      }
+      .Medieval-title{
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .Content-Blog img {
+          display: block;
+          margin-left:auto;
+          margin-right:auto;
+      }
+    </style>
 </head>
 <body>
     <div id = "wrapper">
@@ -19,28 +42,27 @@
           
         </header> 
         <div id="content-wrapper">
-         <div class = "Blog-title">
-           This is my first Blog
+         <div class = "Medieval-title">
+           A Visualization of Population Density in Medieval England
         </div>
-        <div id = "Twitter">
-          <a href ="https://twitter.com/WilliamCodes1">By: @William_Codes1</a>
-        </div>
-        <div id = "Date">
-        April 15th, 2021
-          </div>
-        <p class= "Content-Blog">
         <br>
-        
+        <p class= "Content-Blog">
+         
         <button class="Project-Button">Live Project</button>
         <br>
-        
+        <br>
         Last week, I picked up Ian Mortimer's classic "The Time Traveler's Guide to Medeival England". It's a really good 
         book that tells me that I am fantastically lucky to live in the 21st century. The Black Plague and fighting for some 
         rich lord - Noooooo thank you. But I also decided to test out my leaflet skills, and come up with a quick heatmap 
         visualization of population density in England, in 1377. It's a fun thought exercise, especially when compared with 
         modern times. 
-
-        Leaflet is a great way to visualize geographic data, so make sure to check out the documentation here. 
+        <br>
+        <br>
+        Leaflet is a great way to visualize geographic data, and with plugins, it gives you the ability to visualize data 
+        as a heat map. Here, I pulled tax payer data from rural settlements in 1377 England, with each popup on the chart 
+        displaying the town name, and the number of taxpayers over the past 14 years. It's a good approximation of population 
+        density. I wonder how many of those taxpayers had to content with obnoxious TurboTax advertisments?
+        <br>
         <br>
         
         <img src="https://assets.entrepreneur.com/content/3x2/2000/20190709140022-virgin-galactic.jpeg" alt="Mountains" class="hvrbox-layer_bottom">
